@@ -235,7 +235,8 @@ async function makeCommitsForDay(variables, state) {
 
   state.currentMarker = getCurrentMarker(state.currentPosition);
 
-  state.currentCommitsLeft = getCommitsForMarker(state.currentMarker)
+  state.currentCommitsLeft = getCommitsForMarker(state.currentMarker);
+  state.initialCommitsForCycle = state.currentCommitsLeft;
 }
 
 export const handler = async (event, context, cb) => {
@@ -282,6 +283,7 @@ export const handler = async (event, context, cb) => {
  * @property {ArtPosition} currentPosition
  * @property {string} currentMarker
  * @property {number} currentCommitsLeft
+ * @property {number} initialCommitsForCycle
  */
 
 /**
