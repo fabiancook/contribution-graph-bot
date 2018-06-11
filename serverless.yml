@@ -1,0 +1,23 @@
+service:
+  name: aws-nodejs-ecma-script
+
+# Add the serverless-webpack plugin
+plugins:
+  - serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  environment:
+    GITHUB_TOKEN: ${opt:github-token}
+    GITHUB_USER: ${opt:github-user}
+    GITHUB_REPO: ${opt:github-repo}
+    GITHUB_STATE_FILE: state.json
+
+functions:
+  second:
+    handler: run.handler
+    events:
+      - http:
+          method: get
+          path: second
