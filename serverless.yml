@@ -17,6 +17,7 @@ provider:
 functions:
   second:
     handler: run.handler
+    awsKmsKeyArn: ${opt:kms-key}
     events:
       - http:
           method: get
