@@ -45,11 +45,11 @@ Your bot will now run a few times a day to make sure your
 Modify `art.js` with these values related to the amount of commits to make in a single
 day for a given timezone
 
-0. ` `
-1. `░`
-2. `▒`
-3. `▓`
-4. `█`
+- `0`: ` ` (Single space)
+- `1`: `░`
+- `2`: `▒`
+- `3`: `▓`
+- `4`: `█`
 
 Each line in your art should be 52 characters long.
 
