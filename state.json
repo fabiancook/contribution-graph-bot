@@ -1,1 +1,15 @@
-{}
+{
+  "firstCycle": "2018-06-11",
+  "firstPosition": 2,
+  "lastCycle": "2018-06-11",
+  "currentCycle": 1,
+  "currentPosition": {
+    "totalDaysSinceStartOfFirstColumn": 2,
+    "totalWeeks": 0.2857142857142857,
+    "currentColumn": 0,
+    "currentRow": 2
+  },
+  "currentMarker": "░",
+  "currentCommitsLeft": 0,
+  "initialCommitsForCycle": 1
+}
